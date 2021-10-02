@@ -1,14 +1,4 @@
- $(document).ready(function() {
-           
-           //polygongraph("polygon1",1);
-           //setnumber(1,3,4,4,4,3);
-           
-      
-                
-           //polygongraph("polygon2",2);
-           //setnumber(2,1,3,1,1,1);
-           
-        });
+
 
         
                function tops_style(no){  
@@ -31,7 +21,7 @@
             $(".top_"+no).css("clip-path","polygon(100% 100%,50% 0%,0% 100%)");            
             $(".top_"+no).css("-webkit-clip-path"," polygon(100% 100%,50% 0%,0% 100%)");
             
-            $(".top_"+no).css("background-image","url(/assets/polygon/graph/tops.png)"); 
+            $(".top_"+no).css("background-image","url('https://www.i-pic.info/i/06PS73231.png')"); 
             
             tops_cover(no);
                
@@ -76,8 +66,8 @@
             $(".topleft_"+no).css("background-position","center");
                            
             $(".topleft_"+no).css("clip-path","polygon(100% 100%,100% 0%,0% 100%)");            
-            $(".topleft_"+no).css("-webkit-clip-path"," polygon(100% 100%,100% 0%,0% 100%)");
-            $(".topleft_"+no).css("background-image","url(./image/graph/top-left.png)"); 
+            $(".topleft_"+no).css("-webkit-clip-path"," polygon(100% 100%,100% 0%,0% 100%)"); 
+            $(".topleft_"+no).css("background-image","url('https://www.i-pic.info/i/Tvs573229.png')"); 
             $(".topleft_"+no).css("position","relative"); 
             
             topleft_cover(no);
@@ -124,7 +114,7 @@
                            
             $(".topright_"+no).css("clip-path","polygon(0% 100%,100% 100%,0% 0%)");            
             $(".topright_"+no).css("-webkit-clip-path","polygon(0% 100%,100% 100%,0% 0%)");
-            $(".topright_"+no).css("background-image","url(./image/graph/top-right.png)"); 
+            $(".topright_"+no).css("background-image","url('https://www.i-pic.info/i/nE1373230.png')"); 
             $(".topright_"+no).css("position","relative"); 
             
         topright_cover(no);
@@ -169,7 +159,7 @@
                            
             $(".bottomleft_"+no).css("clip-path","polygon(100% 0%,1% 0%,50% 100%)");            
             $(".bottomleft_"+no).css("-webkit-clip-path","polygon(100% 0%,1% 0%,50% 100%)");
-            $(".bottomleft_"+no).css("background-image","url(./image/graph/bottom-left.png)"); 
+            $(".bottomleft_"+no).css("background-image","url('https://www.i-pic.info/i/FxdE73226.png')"); 
             bottomleft_cover(no);
         }
         
@@ -210,7 +200,7 @@
                            
             $(".bottomright_"+no).css("clip-path","polygon(0% 0%,100% 0%,50% 100%)");            
             $(".bottomright_"+no).css("-webkit-clip-path","polygon(0% 0%,100% 0%,50% 100%)");
-             $(".bottomright_"+no).css("background-image","url(./image/graph/bottom-right.png)");                    
+             $(".bottomright_"+no).css("background-image","url('https://www.i-pic.info/i/Lmcz73228.png')");                    
              
              bottomright_cover(no);
 
@@ -276,19 +266,25 @@
            htmls+="<div class='topleft_"+no+"'><div class='topleft_cover_"+no+"' onmouseover='settoplefthover_in("+no+");' onmouseout='settoplefthover_out("+no+");'></div></div>";
            htmls+="<div class='topright_"+no+"'><div class='topright_cover_"+no+"' onmouseover='settoprighthover_in("+no+");' onmouseout='settoprighthover_out("+no+");'></div></div>";
            htmls+="</div>";
-           htmls+="<div style='width:100%;height:100%;position: relative;'>";
+           htmls+="<div style='width:100%;height:100%;'>";
            htmls+="<div class='bottomleft_"+no+"'><div class='bottomleft_cover_"+no+"' onmouseover='setbottomlefthover_in("+no+");' onmouseout='setbottomlefthover_out("+no+");'></div></div>";        
-           htmls+="<div class='top_"+no+"'><div class='top_cover_"+no+"'></div></div>";
+           htmls+="<div class='top_"+no+"'><div class='top_cover_"+no+"' onmouseover='settophover_in("+no+");'></div></div>";
            htmls+="<div class='bottomright_"+no+"'><div class='bottomright_cover_"+no+"' onmouseover='setbottomrighthover_in("+no+");' onmouseout='setbottomrighthover_out("+no+");'></div></div>";
            htmls+="</div>";
  
              
            $("#"+id).html(htmls);   
-       
+      
            setstyles(no);                
         }
         
           function settophover_in(no){
+           
+              $(".top_cover_"+no).css("background-color","#FF0000");
+          }
+          
+           function settophover_out(no){
+              alert(no);
               $(".top_cover_"+no).css("background-color","#FF0000");
           }
           
@@ -339,9 +335,9 @@
    
            
            tops_style(no);
-          // topleft_style(no);
-          // topright_style(no);
-          // bottomleft_style(no);
-          // bottomright_style(no);
+           topleft_style(no);
+           topright_style(no);
+           bottomleft_style(no);
+           bottomright_style(no);
         }
         

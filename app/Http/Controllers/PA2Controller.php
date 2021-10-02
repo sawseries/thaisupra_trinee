@@ -78,6 +78,10 @@ class PA2Controller extends Controller {
     }
     
     
+    public function PA2_4(){ 
+         return view("PA2.PA2_4"); 
+    }
+    
     public function PA2_Insert_Task(Request $request){        
         
             DB::table('pa_task')->insert([

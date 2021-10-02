@@ -40,10 +40,12 @@
         <script src="{{asset('/storage/controller/pa_3.js')}}"></script> 
          <script src="{{asset('/storage/controller/templates.js')}}"></script> 
  
+         
         <link href="{{ asset('assets/css/evaluation.css') }}" rel="stylesheet">
         <link href="{{ asset('assets/css/template.css') }}" rel="stylesheet">
         <script src="{{asset('/storage/controller/element.js')}}"></script> 
-         <script src="{{asset('assets/polygon/polygon.js')}}"></script> 
+         <script src="{{asset('assets/polygon/polygon.js')}}"></script>
+           <link href="{{ asset('assets/polygon/polygon.css') }}" rel="stylesheet">
     </head>
     <body>
         @include('layouts.extend')
