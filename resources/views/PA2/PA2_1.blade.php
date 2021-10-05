@@ -1,23 +1,6 @@
 @extends('layouts.app')    
 @section('content')
 <!-- Page content-->
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-       
-      <script>
-          $(document).ready(function() {
-           
-           //id,no
-           polygongraph("polygon1",1);
-           
-           setnumber(1,3,4,4,4,3);
-           
-
-           });
-
-        </script>
-
-
 <div class="container-fluid" style="padding-bottom:100px;">
     <div class="child">
         <div class="page_header">
@@ -111,12 +94,7 @@
         
         
        
-                    
-               <div style="width:550px;height:480px;padding-top:1em;margin:0 auto;">
-            
-               <div id='polygon1' class="polygon" style=""></div> 
- 
-               </div>   
+                  
         
 
         <div style="margin-top:80px;margin-bottom:40px;text-align: center;">
@@ -158,19 +136,12 @@
                 </tr> 
             </table>
                     
-       
-                    
-              
- 
-        
-  
-       
         <br><br><br>
        <center>
         <a class="btn_blue" href="{{url('PA2_2')}}"><li style="margin-right:10px;font-size: 18pt;" class="fa fa-arrow-circle-right "></li> แผนพัฒนาตนเอง</a> 
        </center>
 </div>
-
+</div>
 
 
 
