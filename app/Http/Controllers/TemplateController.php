@@ -247,6 +247,13 @@ class TemplateController extends Controller {
                 ->where('PA_year', PA_year())         
                 ->first();
         
+        $arr_learn_class='';
+        
+        if(!empty($Profile)){
+           $arr_learn_class = explode(",", $Profile->class_knowlage);
+        }
+
+        $pa_learn_class = pa_learn_class::all();
     
 
         return view("template.graphic.".$request->pages, [
@@ -262,12 +269,13 @@ class TemplateController extends Controller {
                     "issue" => $issue,
                     "standard1" => $standard1,
                     "standard2" => $standard2,
-                     "development" => $development,
-                     "task" => $task,
-                     "topic1" => $topic1,
-                      "topic2" => $topic2,
-//                     "topic_model"=>$topic_model,
-                     "response_hour" => $response_hour])
+                    "development" => $development,
+                    "task" => $task,
+                    "topic1" => $topic1,
+                    "topic2" => $topic2,
+                    "arr_learn_class"=>$arr_learn_class,
+                    "pa_learn_class"=> $pa_learn_class,
+                    "response_hour" => $response_hour])
                     ->withModel($pa_standard);
      }
      

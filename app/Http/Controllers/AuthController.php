@@ -48,9 +48,8 @@ class AuthController extends Controller {
             session(['uLevel' => $user["user"]["level"]]);
             session(['uAddress' => $user["user"]["docaddress"]]);
 
-
-            //self::Pa(session('uID'));
             return redirect('PA1_1');
+            
         } else {
 
             return redirect('login');
@@ -76,10 +75,8 @@ class AuthController extends Controller {
             session(['uAddress' => $user["user"]["docaddress"]]);
 
 
-            //self::Pa(session('uID'));
             return redirect('PA1_1');
         } else {
-            //return view("login");
             return redirect('login');
         }
     }

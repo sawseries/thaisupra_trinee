@@ -20,8 +20,8 @@
                         
             $(".top_"+no).css("clip-path","polygon(100% 100%,50% 0%,0% 100%)");            
             $(".top_"+no).css("-webkit-clip-path"," polygon(100% 100%,50% 0%,0% 100%)");
-            
-            $(".top_"+no).css("background-image","url('https://www.i-pic.info/i/06PS73231.png')"); 
+            //https://www.i-pic.info/i/06PS73231.png'
+            $(".top_"+no).css("background-image","url('/assets/polygon/graph/tops.png')"); 
             
             tops_cover(no);
                
@@ -66,8 +66,8 @@
             $(".topleft_"+no).css("background-position","center");
                            
             $(".topleft_"+no).css("clip-path","polygon(100% 100%,100% 0%,0% 100%)");            
-            $(".topleft_"+no).css("-webkit-clip-path"," polygon(100% 100%,100% 0%,0% 100%)"); 
-            $(".topleft_"+no).css("background-image","url('https://www.i-pic.info/i/Tvs573229.png')"); 
+            $(".topleft_"+no).css("-webkit-clip-path"," polygon(100% 100%,100% 0%,0% 100%)");// https://www.i-pic.info/i/Tvs573229.png
+            $(".topleft_"+no).css("background-image","url('/assets/polygon/graph/top-left.png')"); 
             $(".topleft_"+no).css("position","relative"); 
             
             topleft_cover(no);
@@ -113,8 +113,8 @@
           
                            
             $(".topright_"+no).css("clip-path","polygon(0% 100%,100% 100%,0% 0%)");            
-            $(".topright_"+no).css("-webkit-clip-path","polygon(0% 100%,100% 100%,0% 0%)");
-            $(".topright_"+no).css("background-image","url('https://www.i-pic.info/i/nE1373230.png')"); 
+            $(".topright_"+no).css("-webkit-clip-path","polygon(0% 100%,100% 100%,0% 0%)");//https://www.i-pic.info/i/nE1373230.png
+            $(".topright_"+no).css("background-image","url('/assets/polygon/graph/top-right.png')"); 
             $(".topright_"+no).css("position","relative"); 
             
         topright_cover(no);
@@ -158,8 +158,8 @@
             $(".bottomleft_"+no).css("background-position","center");
                            
             $(".bottomleft_"+no).css("clip-path","polygon(100% 0%,1% 0%,50% 100%)");            
-            $(".bottomleft_"+no).css("-webkit-clip-path","polygon(100% 0%,1% 0%,50% 100%)");
-            $(".bottomleft_"+no).css("background-image","url('https://www.i-pic.info/i/FxdE73226.png')"); 
+            $(".bottomleft_"+no).css("-webkit-clip-path","polygon(100% 0%,1% 0%,50% 100%)");//https://www.i-pic.info/i/FxdE73226.png
+            $(".bottomleft_"+no).css("background-image","url('/assets/polygon/graph/bottom-left.png')"); 
             bottomleft_cover(no);
         }
         
@@ -199,8 +199,8 @@
                        
                            
             $(".bottomright_"+no).css("clip-path","polygon(0% 0%,100% 0%,50% 100%)");            
-            $(".bottomright_"+no).css("-webkit-clip-path","polygon(0% 0%,100% 0%,50% 100%)");
-             $(".bottomright_"+no).css("background-image","url('https://www.i-pic.info/i/Lmcz73228.png')");                    
+            $(".bottomright_"+no).css("-webkit-clip-path","polygon(0% 0%,100% 0%,50% 100%)");//https://www.i-pic.info/i/Lmcz73228.png
+             $(".bottomright_"+no).css("background-image","url('/assets/polygon/graph/bottom-right.png')");                    
              
              bottomright_cover(no);
 

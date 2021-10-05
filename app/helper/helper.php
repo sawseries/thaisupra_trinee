@@ -126,6 +126,20 @@ function datethai($date) {
     return $day."  ". month($month)."  ".$year;
 }
 
+
+function datebref($date) {
+
+    $date = explode("-", $date);
+
+    $day = $date[2];
+    $month =$date[1];
+    $year = substr($date[0],2,2);
+
+    return $day."/".$month."/".$year;
+}
+
+
+
 function month($months) {
     $month = "";
     switch ($months) {
@@ -182,6 +196,22 @@ function calage($date){
    if($d>0){
        $datestr.=$d." "."วัน "; 
    }
-
       return $datestr;
-    }
+}
+    
+    
+ function degree($score){
+     
+     if(($score>=1)&&($score<=1.5)){
+         return "ควรปรับปรุง";
+     }else if(($score>=1.51)&&($score<=2.5)){
+         return "พอใช้";
+     }else if(($score>=2.51)&&($score<=3.5)){
+         return "ปานกลาง";
+     }else if(($score>=3.51)&&($score<=4.5)){
+         return "ดี";
+     }else if(($score>=4.5)&&($score<=5)){
+         return "ดีมาก";
+     }
+     
+ } 

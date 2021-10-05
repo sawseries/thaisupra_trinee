@@ -9,12 +9,10 @@
            
            //id,no
            polygongraph("polygon1",1);
+           
            setnumber(1,3,4,4,4,3);
            
-           //id,no 
-           polygongraph("polygon2",2);
-           setnumber(2,3,2,2,1,3);
-        
+
            });
 
         </script>
@@ -81,8 +79,8 @@
                 @foreach($standard as $standards) 
                 <tr class="tr_header">
                     <th>{{$standards->detail}}</th>
-                    <th>3</th>
-                    <th>ปานกลาง</th>
+                    <th><?php $sum_score=App\pa_standard::getuser_score_sum(uId(),PA_year(),$standards->no);echo $sum_score; ?></th>
+                    <th>{{degree($sum_score)}}</th>
                 </tr>
                 
                 <?php $item = $model->find_standard($standards->no); ?>
@@ -90,10 +88,11 @@
                 <tr>
                 <td style="padding:1em;padding-left: 30px;text-align: left;">{{$items->no}}. {{$items->detail}}</td>
                 <td style="text-align:center;">
-                    3.50
+                  <?php $scores=App\pa_standard::getuser_score(uId(),PA_year(),$standards->no,$items->no);echo $scores; ?>
+       
                 </td>
                 <td style="text-align:center;">
-                    ปานกลาง
+                    {{degree($scores)}}
                 </td>
                </tr>
                  @endforeach
@@ -113,7 +112,7 @@
         
        
                     
-               <div style="width:500px;height:480px;padding-top:1em;margin:0 auto;">
+               <div style="width:550px;height:480px;padding-top:1em;margin:0 auto;">
             
                <div id='polygon1' class="polygon" style=""></div> 
  

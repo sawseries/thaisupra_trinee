@@ -26,14 +26,14 @@ function add_schedule() {
 
     $("#tbl_schedule").before('<tr id="tr_sche_' + sche + '">\n\
                     <td><select class="form-control" id="txtgroup_learn" name="txtgroup_learn[]" required style="text-align:center;">\n\
-           <option value="กลุ่มสาระการเรียนรู้ภาษาไทย">กลุ่มสาระการเรียนรู้ภาษาไทย</option>\n\
-           <option value="กลุ่มสาระการเรียนรู้คณิตศาสตร์">กลุ่มสาระการเรียนรู้คณิตศาสตร์</option>\n\
-           <option value="กลุ่มสาระการเรียนรู้วิทยาศาสตร์">กลุ่มสาระการเรียนรู้วิทยาศาสตร์</option>\n\
-           <option value="กลุ่มสาระการเรียนรู้สังคมศึกษา ศาสนา และวัฒนธรรม">กลุ่มสาระการเรียนรู้สังคมศึกษา ศาสนา และวัฒนธรรม</option>\n\
-           <option value="กลุ่มสาระการเรียนรู้สุขศึกษาและพลศึกษา">กลุ่มสาระการเรียนรู้สุขศึกษาและพลศึกษา</option>\n\
-           <option value="กลุ่มสาระการเรียนรู้ศิลปะ">กลุ่มสาระการเรียนรู้ศิลปะ</option>\n\
-           <option value="กลุ่มสาระการเรียนรู้การงานอาชีพและเทคโนโลยี">กลุ่มสาระการเรียนรู้การงานอาชีพและเทคโนโลยี</option>\n\
-           <option value="กลุ่มสาระการเรียนรู้ภาษาต่างประเทศ">กลุ่มสาระการเรียนรู้ภาษาต่างประเทศ</option>\n\
+           <option value="ภาษาไทย">ภาษาไทย</option>\n\
+           <option value="คณิตศาสตร์">คณิตศาสตร์</option>\n\
+           <option value="วิทยาศาสตร์">วิทยาศาสตร์</option>\n\
+           <option value="สังคมศึกษา ศาสนา และวัฒนธรรม">สังคมศึกษา ศาสนา และวัฒนธรรม</option>\n\
+           <option value="สุขศึกษาและพลศึกษา">สุขศึกษาและพลศึกษา</option>\n\
+           <option value="ศิลปะ">กลุ่มสาระการเรียนรู้ศิลปะ</option>\n\
+           <option value="การงานอาชีพและเทคโนโลยี">การงานอาชีพและเทคโนโลยี</option>\n\
+           <option value="ภาษาต่างประเทศ">ภาษาต่างประเทศ</option>\n\
            <option value="กิจกรรมพัฒนาผู้เรียน">กิจกรรมพัฒนาผู้เรียน</option>\n\
            </select></td>\n\
         <td><input type="text" class="form-control" id="txtsubject" name="txtsubject[]" required style="text-align:center;"></td>\n\
@@ -98,14 +98,15 @@ function add_schedule_edit() {
 
     $("#tbl_schedule").before('<tr id="tr_sche_' + sche + '">\n\
         <td><select class="form-control" id="txtgroup_learn" name="txtigroup_learn[' + sche + ']" required style="text-align:center;">\n\
-           <option value="กลุ่มสาระการเรียนรู้ภาษาไทย">กลุ่มสาระการเรียนรู้ภาษาไทย</option>\n\
-           <option value="กลุ่มสาระการเรียนรู้คณิตศาสตร์">กลุ่มสาระการเรียนรู้คณิตศาสตร์</option>\n\
-           <option value="กลุ่มสาระการเรียนรู้วิทยาศาสตร์">กลุ่มสาระการเรียนรู้วิทยาศาสตร์</option>\n\
-           <option value="กลุ่มสาระการเรียนรู้สังคมศึกษา ศาสนา และวัฒนธรรม">กลุ่มสาระการเรียนรู้สังคมศึกษา ศาสนา และวัฒนธรรม</option>\n\
-           <option value="กลุ่มสาระการเรียนรู้สุขศึกษาและพลศึกษา">กลุ่มสาระการเรียนรู้สุขศึกษาและพลศึกษา</option>\n\
-           <option value="กลุ่มสาระการเรียนรู้ศิลปะ">กลุ่มสาระการเรียนรู้ศิลปะ</option>\n\
-           <option value="กลุ่มสาระการเรียนรู้การงานอาชีพและเทคโนโลยี">กลุ่มสาระการเรียนรู้การงานอาชีพและเทคโนโลยี</option>\n\
-           <option value="กลุ่มสาระการเรียนรู้ภาษาต่างประเทศ">กลุ่มสาระการเรียนรู้ภาษาต่างประเทศ</option>\n\
+           <option value="ภาษาไทย">ภาษาไทย</option>\n\
+           <option value="คณิตศาสตร์">คณิตศาสตร์</option>\n\
+           <option value="วิทยาศาสตร์">วิทยาศาสตร์</option>\n\
+           <option value="สังคมศึกษา ศาสนา และวัฒนธรรม">สังคมศึกษา ศาสนา และวัฒนธรรม</option>\n\
+           <option value="สุขศึกษาและพลศึกษา">สุขศึกษาและพลศึกษา</option>\n\
+           <option value="ศิลปะ">กลุ่มสาระการเรียนรู้ศิลปะ</option>\n\
+           <option value="การงานอาชีพและเทคโนโลยี">การงานอาชีพและเทคโนโลยี</option>\n\
+           <option value="ภาษาต่างประเทศ">ภาษาต่างประเทศ</option>\n\
+           <option value="กิจกรรมพัฒนาผู้เรียน">กิจกรรมพัฒนาผู้เรียน</option>\n\
            <option value="กิจกรรมพัฒนาผู้เรียน">กิจกรรมพัฒนาผู้เรียน</option>\n\
            </select></td>\n\
         <td><input type="text" class="form-control" id="txtsubject" name="txtisubject[' + sche + ']" required style="text-align:center;"></td>\n\

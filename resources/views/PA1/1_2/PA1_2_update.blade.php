@@ -315,7 +315,7 @@
                 @endif
                 <tr class="tr_footer" id="tbl_response">
                     <th>สรุปชั่วโมงการปฏิบัติหน้าที่</th>
-                    <th></th>
+                    <th>{{$res_hr}}</th>
                     <th></th>
                 </tr>
             </table>
